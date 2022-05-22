@@ -27,6 +27,7 @@ body {
 /*шапка*/
 .header {
   width: 100%;
+  background-image: url("../images/banner-bg-tablet.jpg");
 }
 
 .pic-header {
@@ -52,7 +53,8 @@ body {
 .logo-nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
+  padding-left: 34.9px;
+  padding-right: 34.9px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -73,10 +75,12 @@ body {
 .nav-items {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .nav-item {
-  padding-right: 27px;
+  margin-right: 27px;
 }
 
 .nav-item:last-child {
@@ -174,17 +178,16 @@ body {
   margin-right: auto;
   font-weight: 700;
   width: 700px;
-  padding-top: 80px;
-  padding-bottom: 145px;
+  margin-top: 80px;
   position: relative;
   z-index: 5;
+  padding-bottom: 145px;
 }
 
 .title {
   font-family: inherit;
   font-size: 20px;
   color: #000;
-  margin-top: 63px;
   margin-bottom: 44px;
   text-transform: uppercase;
   text-align: center;
@@ -209,16 +212,17 @@ body {
 
   .logo-nav {
     max-width: 697px;
-    padding-top: 50px;
+    padding: 0px 50px;
+    align-items: center;
   }
 
   .nav-items {
     display: none;
   }
-
+/* 
   .pic-header {
     background-image: url("../images/banner-bg-tablet.jpg");
-  }
+  } */
 
   .title-header {
     font-size: 40px;
@@ -260,7 +264,6 @@ body {
 }
 
 .trend {
-  display: flex;
   flex-wrap: wrap;
   width: 24.6%;
   flex-direction: column;
@@ -310,10 +313,8 @@ body {
 
 .text-trend {
   outline: 3px solid #b59f5b;
-  outline-offset: -20px;
   position: relative;
   z-index: 10;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -322,8 +323,6 @@ body {
   display: flex;
   list-style: none;
   z-index: 10;
-  padding-top: 40px;
-  padding-left: 33px;
 }
 
 .trend-link a {
@@ -333,10 +332,13 @@ body {
   color: #b59f5b;
   text-transform: uppercase;
   text-decoration: none;
-  padding-right: 20px;
   position: relative;
   z-index: 10;
+  margin-right: 20px;
 }
+/* .trend-link a:not(:last-child) {
+  margin-right: 0;
+} */
 
 .trend-link a:hover {
   text-decoration: underline;
@@ -351,10 +353,7 @@ body {
   line-height: 1.2;
   position: relative;
   z-index: 10;
-  padding-bottom: 40px;
-  padding-left: 33px;
-  padding-right: 40px;
-  padding-top: 14px;
+  margin-top: 14px;
   text-transform: uppercase;
 }
 
@@ -370,8 +369,7 @@ body {
 .frame {
   display: flex;
   align-items: flex-end;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 20px;
   position: relative;
 }
 
@@ -420,7 +418,6 @@ body {
 
 .body-picture {
   width: 382px;
-  margin-right: 31px;
 }
 
 .body-links {
@@ -428,6 +425,7 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   padding-inline-start: 0;
+  margin-right: 20px;
 }
 
 .body-link-a a {
@@ -436,7 +434,6 @@ body {
   color: #b59f5b;
   font-weight: 700;
   font-size: 14px;
-  padding-right: 20px;
 }
 
 .body-link-a a:hover {
@@ -446,7 +443,7 @@ body {
 .body-title {
   font-family: inherit;
   text-transform: uppercase;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .body-title a {
@@ -464,15 +461,15 @@ body {
 
 .body-time-list {
   display: inline-block;
-  padding-top: 35px;
-  padding-bottom: 53px;
+  margin-top: 35px;
+  margin-bottom: 53px;
 }
 
 .body-time {
   color: #b5b5b5;
   font-family: inherit;
   font-size: 12px;
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .body-list {
@@ -556,6 +553,9 @@ body {
 
   .body-picture {
     width: 100%;
+  }
+  .body-picture-body {
+    margin-right: 31px;
   }
 
   .body-info {
@@ -797,14 +797,14 @@ body {
 
 }
 
-.preview-text:after {
-  content: "";
+.preview-text {
   display: block;
   width: 271px;
-  height: 1px;
-  background-color: #eeeeee;
-  margin-bottom: 19px;
+  /* height: 1px; */
+  /* background-color: #eeeeee; */
+  margin-bottom: 19px; 
   margin-top: 16px;
+  border-bottom: solid 2px #eeeeee;
 }
 
 .preview-text a:hover {
@@ -823,20 +823,16 @@ body {
 }
 
 .card-container {
-
-
   display: flex;
   flex-direction: column;
-
+  width: 25%;
 }
 
 
 
 .card-text-card {
-  width: 300px;
   outline: 3px solid #b59f5b;
   outline-offset: 24px;
-  display: flex;
   flex-direction: column;
   flex-grow: 1;
 
@@ -871,7 +867,6 @@ body {
 }
 
 .price {
-  display: flex;
   flex-direction: column;
 }
 
@@ -927,7 +922,6 @@ body {
   .cards-box {
     margin-left: auto;
     flex-direction: column;
-
     width: 100%;
   }
 }
@@ -952,6 +946,7 @@ body {
 .socials {
   display: flex;
   list-style-type: none;
+  padding-right: 0px;
 }
 
 .social-link {
@@ -961,7 +956,6 @@ body {
   background-repeat: no-repeat;
   background-size: 23px;
   background-position: center;
-  margin-right: 30px;
 }
 
 .social-link-twitter {
@@ -983,7 +977,9 @@ body {
 .social-link-tumblr {
   background-image: url("../svg/003-tumblr.svg");
 }
-
+.social-item {
+  margin-right: 30px;
+}
 .social-item-text {
   width: 1px;
   height: 1px;
@@ -997,7 +993,6 @@ body {
   font-size: 12px;
   font-weight: 700;
   text-transform: capitalize;
-
   margin-top: 74px;
   margin-bottom: 41px;
 }
@@ -1036,12 +1031,9 @@ body {
 }
 
 .b-popup_hidden .b-popup-content {
-  margin: 40px auto 0px auto;
   width: 390px;
-  position: fixed;
   padding: 10px;
   background-color: #fff;
-
 }
 
 .b-popup-content {

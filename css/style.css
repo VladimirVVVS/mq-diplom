@@ -312,6 +312,7 @@ body {
 }
 
 .text-trend {
+  width: 100%;
   outline: 3px solid #b59f5b;
   position: relative;
   z-index: 10;
